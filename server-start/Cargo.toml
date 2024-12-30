@@ -1,0 +1,19 @@
+[package]
+name = "server-start"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+server-api = { workspace = true }
+server-core = { workspace = true }
+
+anyhow = { workspace = true }
+axum = { workspace = true }
+bb8 = { workspace = true }
+bb8-redis = { workspace = true }
+clap = { workspace = true }
+dotenvy = { workspace = true }
+sqlx = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+tokio = { workspace = true }

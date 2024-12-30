@@ -1,0 +1,44 @@
+[workspace]
+members = [
+    "server",
+    "server-api", "server-auth",
+    "server-cache",
+    "server-core",
+    "server-database",
+    "server-grpc",
+    "server-model",
+    "server-mq",
+    "server-search",
+    "server-service",
+    "server-start",
+]
+resolver = "2"
+
+[workspace.dependencies]
+server-api = { path = "server-api" }
+server-cache = { path = "server-cache" }
+server-core = { path = "server-core" }
+server-database = { path = "server-database" }
+server-grpc = { path = "server-grpc" }
+server-model = { path = "server-model" }
+server-mq = { path = "server-mq" }
+server-search = { path = "server-search" }
+server-service = { path = "server-service" }
+server-start = { path = "server-start" }
+
+anyhow = { version = "1.0.95" }
+axum = { version = "0.7.9" }
+bb8 = { version = "0.9.0" }
+bb8-redis = { version = "0.18.0" }
+clap = { version = "4.5.23", features = ["derive", "env"] }
+dotenvy = { version = "0.15.7" }
+jsonwebtoken = { version = "9.3.0" }
+redis = { version = "0.27.6" }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = { version = "1.0.134" }
+sqlx = { version = "0.8.2", features = ["runtime-tokio", "postgres", "time", "uuid"] }
+thiserror = { version = "2.0.9" }
+tokio = { version = "1.42.0", features = ["full"] }
+tracing = { version = "0.1.41" }
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+uuid = { version = "1.11.0", features = ["serde", "v4", "v7"] }

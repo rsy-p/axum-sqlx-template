@@ -1,0 +1,13 @@
+[package]
+name = "server-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+server-cache = { workspace = true }
+server-core = { workspace = true }
+server-model = { workspace = true }
+server-database = { workspace = true }
+
+axum = { workspace = true }
+uuid = { workspace = true }
