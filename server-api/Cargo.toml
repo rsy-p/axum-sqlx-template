@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+axum = { workspace = true }
+
 server-core = { workspace = true }
 server-service = { workspace = true }
-
-axum = { workspace = true }

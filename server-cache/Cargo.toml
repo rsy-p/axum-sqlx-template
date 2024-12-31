@@ -4,5 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-server-core = { workspace = true }
 redis = { workspace = true }
+
+server-core = { workspace = true }
